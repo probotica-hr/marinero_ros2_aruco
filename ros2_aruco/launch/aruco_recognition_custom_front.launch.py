@@ -19,6 +19,7 @@ def generate_launch_description():
             package='ros2_aruco',
             executable='aruco_node',
             name='aruco_node',
+	        namespace='front',
             output='screen',
             parameters=[config_path]  # This works only when launched with ros2 launch
         )
